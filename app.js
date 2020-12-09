@@ -17,6 +17,7 @@ const addRouter2 = require('./src/Routes/add2')(nav);
 const authorRouter = require('./src/Routes/authorRoutes')(nav);
 const loginRouter = require('./src/Routes/login')(nav);
 const signRouter = require('./src/Routes/sign')(nav);
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 app.set('view engine','ejs');
 app.set('views','./src/View');
