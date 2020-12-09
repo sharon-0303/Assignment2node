@@ -11,12 +11,12 @@ const nav = [
     {link:'/sign',name:'Sign Up'},
     {link:'/login',name:'Login'}
 ];
-const bookRouter = require('./Src/Routes/bookRoutes')(nav);
-const addRouter = require('./Src/Routes/add')(nav);
-const addRouter2 = require('./Src/Routes/add2')(nav);
-const authorRouter = require('./Src/Routes/authorRoutes')(nav);
-const loginRouter = require('./Src/Routes/login')(nav);
-const signRouter = require('./Src/Routes/sign')(nav);
+const bookRouter = require('./src/Routes/bookRoutes')(nav);
+const addRouter = require('./src/Routes/add')(nav);
+const addRouter2 = require('./src/Routes/add2')(nav);
+const authorRouter = require('./src/Routes/authorRoutes')(nav);
+const loginRouter = require('./src/Routes/login')(nav);
+const signRouter = require('./src/Routes/sign')(nav);
 app.use(express.static('./public'));
 app.set('view engine','ejs');
 app.set('views','./src/View');
