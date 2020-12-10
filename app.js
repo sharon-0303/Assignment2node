@@ -11,7 +11,8 @@ const nav = [
     {link:'/sign',name:'Sign Up'},
     {link:'/login',name:'Login'}
 ];
-//const bookRouter = require('./src/Routes/bookRoutes')(nav);
+console.log(__dirname+"wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww");
+const bookRouter = require('./src/Routes/bookRoutes')(nav);
 const addRouter = require('./src/Routes/add')(nav);
 const addRouter2 = require('./src/Routes/add2')(nav);
 const authorRouter = require('./src/Routes/authorRoutes')(nav);
